@@ -176,3 +176,37 @@ body {
     left: 15px;
     top: 4px;
 }
+
+.card-box {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.card-box .card {
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.card-box .card .number {
+    font-size: 2em;
+    position: relative;
+    font-weight: 500;
+}
+
+.card-box .card .cardName {
+    color: #999;
+}
+
+.card-box .card .icon-box {
+    font-size: 2.5em;
+    color: #03a9f4;
+}
