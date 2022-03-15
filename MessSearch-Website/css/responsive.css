@@ -1,0 +1,36 @@
+@media (max-width: 1024px) {}
+
+@media (max-width: 991px) {
+
+    /*** Navbar Responsive ***/
+    .header_wrapper .navbar-brand span {
+        width: 180px;
+    }
+
+    .header_wrapper .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .header_wrapper .menu-navbar-nav {
+        text-align: center;
+        margin: auto;
+    }
+
+    .header_wrapper .nav-item .nav-link {
+        margin-top: 12px;
+    }
+
+    .header_wrapper .nav-item:last-child .nav-link {
+        margin-bottom: 20px;
+    }
+
+    .header_wrapper .navbar-collapse {
+        background: var(--bg-white);
+    }
+
+
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 330px) {}
