@@ -39,6 +39,7 @@ a:hover {
 
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Quicksand', sans-serif;
+    --third-font: 'Poppins', sans-serif;
 }
 
 
@@ -165,21 +166,78 @@ a:hover {
 /***** Home Design *****/
 /***********************/
 
-.hero {
-    background-image: url(../img/mess-3.jpg);
-    background-position: center;
+
+
+.home_wrapper {
+    background: url(../img/background.png) no-repeat;
+    display: flex;
+    width: 100%;
+    padding: 100px 0 125px;
     background-size: cover;
-    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    font-size: 40px;
-    line-height: 1;
-    text-transform: uppercase;
+.header-img-section {}
+
+.home_wrapper .home-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: var(--text-light-3);
 }
 
-
-h3 {
-    margin: 15px 0;
-    font-size: 25px;
+.home_wrapper .home-title {
+    font-family: var(--third-font);
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: capitalize;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: var(--text-black);
 }
+
+.home_wrapper .home-title span {
+    color: var(--blue);
+}
+
+.home_wrapper .home-title-text {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 40px;
+    max-width: 550px;
+    color: var(--text-dark-gray);
+}
+
+.home_wrapper .learn-more-btn-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.home_wrapper .header-img-section {
+    width: 45%;
+    animation: home 5s ease-in-out infinite;
+}
+
+@keyframes home {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+
+        transform: translateY(20px);
+    }
+
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}
+
+.btn-header {}
