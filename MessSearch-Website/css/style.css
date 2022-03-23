@@ -62,10 +62,21 @@ a:hover {
     transition: 0.7s;
 }
 
+.sign-up-btn:hover {
+    color: var(--text-black) !important;
+    background-color: var(--bg-white);
+    border: 2px solid var(--bg-black);
+}
+
 .btn-extra-header {
     color: var(--text-white);
     background-color: transparent;
     border: 2px solid var(--text-dark-gray);
+}
+
+.btn-extra-header:hover {
+    background-color: var(--bg-black);
+    color: var(--text-white) !important;
 }
 
 .btn {

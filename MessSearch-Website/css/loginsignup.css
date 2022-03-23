@@ -88,6 +88,7 @@ form.sign-in-form {
     border-radius: 55px;
     display: grid;
     grid-template-columns: 15% 85%;
+    -ms-grid-columns: 15% 85%;
     padding: 0 0.4rem;
     position: relative;
 }
@@ -173,6 +174,7 @@ form.sign-in-form {
     left: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: repeat(2, 1fr);
 }
 
 .container:before {
@@ -305,7 +307,9 @@ form.sign-in-form {
 
     .panels-container {
         grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
+        -ms-grid-rows: 1fr 2fr 1fr;
     }
 
     .panel {
