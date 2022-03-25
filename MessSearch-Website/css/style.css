@@ -21,6 +21,7 @@ a:hover {
     --bg-black: #090b3c;
     --bg-white: #fff;
     --bg-gray-white: #fcfcfc;
+    --bg-light-2: #f2f7fa;
 
     --text-black: #000;
     --text-white: #fff;
@@ -29,6 +30,13 @@ a:hover {
     --text-light-3: #5e5e72;
     --text-light-4: #a0a0a0;
     --text-dark-green: #12c4a0;
+
+    --bg-features-1: #fff6d6;
+    --bg-features-2: #ebdcf9;
+    --bg-features-3: #ddf5fc;
+    --bg-features-4: #dcf6e8;
+    --bg-features-5: #f8e4e1;
+    --bg-features-6: #fbffd4;
 
     --blue: #00b8b8;
     --black: #333;
@@ -251,4 +259,18 @@ a:hover {
     }
 }
 
-.btn-header {}
+.clients {
+    padding: 80px 0 70px;
+    background: var(--bg-light-2);
+    justify-content: center;
+}
+
+.clients h2 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-light-2);
+}
