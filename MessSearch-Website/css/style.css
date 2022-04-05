@@ -274,3 +274,195 @@ a:hover {
     margin-bottom: 40px;
     color: var(--text-light-2);
 }
+
+/*************************/
+/****** Pricing CSS ******/
+/*************************/
+
+.price_wrapper {
+    padding: 100px 0 0;
+}
+
+.price_wrapper .pricing_subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: var(--text-light-3);
+}
+
+.price_wrapper .pricing_title {
+    font-family: var(--third-font);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    color: var(--text-black);
+}
+
+.price_wrapper .pricing_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-white);
+    box-shadow: 0 1px 20px rgb(0 0 0 / 15%);
+    flex-direction: column;
+    padding: 40px 40px 45px 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.price_wrapper .pricing_card:hover {
+    box-shadow: 0 2px 29px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.price_wrapper .pricing_period {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text-light-2);
+    font-family: var(--secondary-font);
+    padding-bottom: 0;
+}
+
+.price_wrapper .pricing_card img {
+    max-width: 75%;
+}
+
+.price_wrapper .pricing_rate {
+    font-size: 34px;
+    font-weight: 800;
+    font-family: var(--secondary-font);
+    color: var(var(--text-black));
+    line-height: 1.25;
+}
+
+.price_wrapper .pricing_text {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-black);
+    font-family: var(--secondary-font);
+    margin: 0px;
+}
+
+.price_wrapper .pricing_plan_all {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.price_wrapper .pricing_plan_all ul {
+    list-style: none;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+.price_wrapper .pricing_plan_all li {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark-gray);
+    line-height: 1.25;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.price_wrapper .pricing_plan_all li strike {
+    color: var(--text-light-4);
+}
+
+.price_wrapper .sign-up-btn {
+    background: var(--text-dark-green);
+    border-color: var(--text-dark-green);
+}
+
+.price_wrapper .featured {
+    box-shadow: 0 2px 40px rgb(0 0 0 / 5%);
+    background-color: var(--bg-white);
+    border: 5px solid var(--text-black);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.price_wrapper .pricing_ribbon {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 20;
+}
+
+
+.price_wrapper .pricing_ribbon span {
+    font-family: var(--secondary-font);
+    position: absolute;
+    display: block;
+    width: 225px;
+    font-weight: 600;
+    padding: 5px 0;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+    right: -45px;
+    top: 30px;
+    transform: rotate(-45deg);
+}
+
+.price_wrapper .btn-featured {
+    background: var(--bg-black);
+    border-color: var(--bg-black);
+}
+
+.price_wrapper .sign-up-btn:hover {
+    background: var(--bg-white);
+    border-color: var(--bg-black);
+}
+
+.price_wrapper .btn-featured .pricing_rate {
+    font-size: 40px;
+}
+
+/*************************/
+/****** Footer CSS ******/
+/*************************/
+
+.footer_wrapper {
+    padding: 100px 0 25px;
+    background-image: url(../img/bg_footer.png);
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+    background-size: cover;
+}
+
+.footer_wrapper .logo .footer_brand {
+    font-size: 38px;
+    font-weight: 700;
+    margin-left: -3px;
+}
+
+.footer_wrapper .footer_logo img {
+    max-width: 20%;
+}
+
+.footer_wrapper .footer_text,
+.footer_wrapper .footer_text a {
+    margin-top: 30px;
+    color: var(--bg-white);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.footer_wrapper .footer_title {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+
+}
