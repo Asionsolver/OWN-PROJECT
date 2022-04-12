@@ -1,25 +1,25 @@
 {
-	"folders": [
-		{
-			"path": "..\\..\\Boostrap"
-		},
-		{
-			"path": "..\\..\\WebDevelopment"
-		},
-		{
-			"path": ".."
-		},
-		{
-			"path": "C:\\xampp\\htdocs\\PHP"
-		},
-		{
-			"path": "C:\\xampp\\htdocs\\Laravel9"
-		},
-		{
-			"path": "..\\..\\asionsolver.github.io"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "OWN-PROJECT"
-	}
+  "folders": [
+    {
+      "path": "..\\..\\Boostrap"
+    },
+    {
+      "path": "..\\..\\WebDevelopment"
+    },
+    {
+      "path": ".."
+    },
+    {
+      "path": "C:\\xampp\\htdocs\\PHP"
+    },
+    {
+      "path": "C:\\xampp\\htdocs\\Laravel9"
+    },
+    {
+      "path": "..\\..\\asionsolver.github.io"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "asionsolver.github.io"
+  }
 }
