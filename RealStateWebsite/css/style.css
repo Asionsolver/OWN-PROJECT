@@ -1,28 +1,29 @@
-/********** VARIABLE CSS **********/
+/**==================================== VARIABLE CSS ====================================**/
 
 :root {
     --header-hight: 3.5rem;
 
     /*** COLORS ***/
-    --first-color: hsl(228, 66%, 56%);
-    --first-color-alt: hsl(228, 66%, 47%);
-    --first-color-light: hsl(228, 62%, 59%);
-    --first-color-lighten: hsl(228, 100%, 97%);
+    --first-color: #4562d9;
+    --first-color-alt: #2948c7;
+    --first-color-light: #5670d7;
+    --first-color-lighten: #f0f3ff;
 
-    --second-color: hsl(25, 83%, 53%);
+    --second-color: #eb7724;
 
-    --title-color: hsl(228, 57%, 28%);
+    --title-color: #1f2f70;
 
-    --text-color: hsl(228, 15%, 50%);
-    --text-color-light: hsl(228, 12%, 75%);
+    --text-color: #6c7493;
+    --text-color-light: #b8bbc7;
 
-    --border-color: hsl(228, 99%, 98%);
+    --border-color: #f5f7ff;
 
     --body-color: #fff;
 
     --container-color: #fff;
 
     /*** FONT and TYPOGRAPHY ***/
+
     --poppins-font-family: 'Poppins', sans-serif;
     --biggest-font-size: 2.25rem;
     --h1--font-size: 1.5rem;
@@ -43,4 +44,355 @@
     --z-fixed: 100;
 
     --second-font-family: ;
+}
+
+
+/**======================================== BASE =========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* font-size: 62.5%; */
+}
+
+body {
+    font-family: var(--poppins-font-family);
+    font-size: var(--normal--font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: var(--font-semi-bold-medium);
+    color: var(--title-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button {
+    font-family: var(--poppins-font-family);
+    outline: none;
+    border: none;
+}
+
+/**================================= REUSABLE CSS CLASS =================================**/
+
+.container {
+    /* width: 100%; */
+    max-width: 1024px;
+    margin: 0 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+}
+
+.section-title {
+    font-size: var(--h2--font-size);
+    margin-bottom: 1rem;
+}
+
+.section-title span {
+    color: var(--second-color)
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--second-color);
+}
+
+.main {
+    /* overflow: hidden; */
+}
+
+
+
+/**==================================== HEADER & NAV ====================================**/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: var(--header-hight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    /* display: flex; */
+    display: inline-block;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+}
+
+.nav-logo i {
+    font-size: 1rem;
+}
+
+.nav-logo:hover {
+    color: var(--first-color);
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link i {
+    font-size: 1.25rem;
+}
+
+.nav-link span {
+    display: none;
+}
+
+/**============================== CHANGE BACKGROUND HEADER ==============================**/
+
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px rgba(228, 4%, 15%, 0.1);
+}
+
+.scroll-header .nav-logo {
+    color: var(--first-color);
+}
+
+/**======================================== HOME ========================================**/
+
+.home {
+    background: linear-gradient(170deg, #383838 0%, #0f0f0f 30%);
+    padding-bottom: 0;
+}
+
+.home-container {
+    padding-top: 4rem;
+    row-gap: 3.5rem;
+}
+
+.home-title,
+.home-value-number {
+    color: #fff;
+}
+
+.home-title {
+    font-size: var(--biggest-font-size);
+    line-height: 120%;
+    margin-bottom: 1.25rem;
+}
+
+.home-description {
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+}
+
+.home-search {
+    display: flex;
+    align-items: center;
+    background-color: var(--body-color);
+    padding: .35rem;
+    border-radius: .75rem;
+    border: 3px solid var(--text-color-light);
+    margin-bottom: 2rem;
+}
+
+.home-search i {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home-search-input {
+    width: 90%;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    margin: 0 .5rem;
+}
+
+.home-value {
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.home-value-number {
+    font-size: var(--h1--font-size);
+    font-weight: var(--font-medium)
+}
+
+.home-value-number span {
+    color: var(--second-color);
+}
+
+.home-value-description {
+    display: flex;
+    color: var(--text-color-light);
+    font-size: var(--smaller-font-size);
+}
+
+.home-images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home-orbe {
+    width: 265px;
+    height: 284px;
+    background: linear-gradient(180deg, #292929 93%, #ababab 100%);
+    border-radius: 135px 135px 0 0;
+}
+
+.home-img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 125px 125px 12px 12px;
+    display: inline-flex;
+    align-items: flex-end;
+    bottom: -1.5rem;
+    box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
+    /* margin-bottom: 2rem; */
+}
+
+
+/**======================================= BUTTON =======================================**/
+
+.button {
+    display: inline-block;
+    background: linear-gradient(101deg, #3858d6, #2948c7);
+    border-radius: .5rem;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px hsla(228, 66%, 45%, 0.25);
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 4px 12px hsla(228, 66%, 45%, 0.25);
+    text-transform: none;
+}
+
+.nav-button {
+    display: none;
+}
+
+
+
+
+
+
+/**======================================== LOGOS ========================================**/
+
+
+
+
+
+
+
+
+/**======================================= POPULAR =======================================**/
+
+
+
+
+
+
+
+
+
+
+/**======================================== VALUE ========================================**/
+
+
+
+
+
+
+
+
+
+
+
+/**================================ RESPONSIVE TYPOGRAPHY *================================*/
+
+@media screen and (max-width: 1023px) {
+    .nav-menu {
+        position: fixed;
+        bottom: 2rem;
+        right: 0;
+        width: 90%;
+        transition: .4s;
+        margin: 0 auto;
+        padding: 1.3rem 3rem;
+        border-radius: 1.25rem;
+        background-color: var(--container-color);
+        box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.15);
+    }
+
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-link i {
+        font-size: 1.25rem;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --h1--font-size: 2.25rem;
+        --h2--font-size: 1.5rem;
+        --h3--font-size: 0.875rem;
+
+        --biggest-font-size: 4rem;
+        --normal--font-size: 1rem;
+        --small--font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
 }
