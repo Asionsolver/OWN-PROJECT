@@ -224,6 +224,7 @@ button {
     column-gap: .25rem;
     font-weight: var(--font-medium);
     transition: 0.3s;
+    color: var(--container-color);
 }
 
 .nav-logo i {
@@ -1077,7 +1078,7 @@ body.dark-theme {
     }
 
     .logos-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, max-content);
     }
 
     .value-container,
@@ -1219,9 +1220,131 @@ body.dark-theme {
         padding: .75rem .75rem 2rem;
     }
 
+    .popular-data {
+        padding: 0 .25rem 0 .75rem;
+    }
+
+    .value-container {
+        align-items: flex-start;
+        column-gap: 5rem;
+    }
+
+    .value-orbe,
+    .contact-orbe {
+        width: 501px;
+        height: 641px;
+        border-radius: 258px 258px 16px 16px;
+    }
+
+    .value-img,
+    .contact-img {
+        width: 461px;
+        height: 601px;
+        border-radius: 238px 238px 12px 12px;
+    }
+
+    .value-img img,
+    .contact-img img {
+        max-width: initial;
+        width: 490px;
+    }
+
+    .value-description,
+    .contact-description {
+        font-size: var(--normal--font-size);
+        margin-bottom: 2.5rem;
+    }
+
+    .value-accordion-title {
+        font-size: var(--normal--font-size);
+    }
+
+    .value-accordion-item {
+        padding: 1.25rem 1.25rem 1.25rem 1rem;
+    }
+
+    .value-accordion-description {
+        padding-bottom: 1rem;
+        font-size: var(--small--font-size);
+    }
+
+    .contact-card {
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    .contact-card-box {
+        padding: 28px 1.5rem 1.5rem;
+    }
+
+    .subscribe-container {
+        padding: 4rem 10rem 4.5rem;
+        border-radius: 2rem;
+        border: 12px solid var(--first-color-lighten);
+    }
+
+    .subscribe-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .subscribe-description {
+        font-size: var(--normal--font-size);
+        padding: 0 8rem;
+    }
+
+    .subscribe-button {
+        font-size: var(--normal--font-size);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(4, max-content);
+    }
+
+    .footer-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+        row-gap: 1rem;
+    }
+
+    .footer-info {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .show-scroll {
+        bottom: 3rem;
+        right: 3rem;
+    }
+
 }
 
 
+@media screen and (min-width:1040px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-container {
+        column-gap: 4rem;
+    }
+
+}
 
 
-/**========= BREAKPOINT =========**/
+/**========= FOR 2K & 4K RESOLUTION =========**/
+
+@media screen and (min-width:2048px) {
+    .body {
+        zoom: 1.5;
+    }
+}
+
+@media screen and (min-width:3840px) {
+    .body {
+        zoom: 2;
+    }
+}
